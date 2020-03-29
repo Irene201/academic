@@ -1,0 +1,212 @@
+html, body, div, nav, main, section, footer {
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer, section {
+    display: block;
+}
+
+body {
+    background-color: black;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+main {
+    padding: 10px;
+    margin-left: 17.5%;
+    background-color: #FDDEA5;
+}
+
+main h2, main h3 {
+    color: #D15AED;
+    font-style: italic;
+}
+
+main h3 {
+    border-top: 1px solid #999;
+    padding-top: 10px;
+    clear: right;
+}
+
+main:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    background-image: url("pics/bg.jpg");
+    height: 140px;
+    background-position: center;
+}
+
+header h1, header h3 {
+    padding: 10px;
+    color: #BF3122;
+    margin: 0;
+}
+
+footer {
+    background-color: #A17D1E;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
+
+nav {
+    float: left;
+    width: 17.5%;
+    padding-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 15px;
+}
+
+nav ul li {
+    display: block;
+    margin-right: 5px;
+    margin-bottom: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 3px;
+    display: block;
+}
+
+nav a:link, nav a:visited {
+    background-color: #D35C17;
+    color: white;
+}
+
+nav a:hover, nav a:active {
+    background-color: #FAA942;
+}
+
+img {
+    max-width: 100%;
+}
+
+#fragaX {
+    background-color: #F4B84F;
+    border: 4px solid #AD530B;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 5px 10px #BDC9C3;
+}
+
+th, td {
+    border: 1px solid #666;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 5px 10px #BDC9C3;
+    margin-bottom: 12px;
+}
+
+tr {
+    background-color: white;
+}
+
+th {
+    background-color: #8F310B;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #BDC9C3;
+}
+
+main h3:before {content: "---";}
+
+#wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #F1751C;
+}
+
+#thisPage {
+    background-color: #A17D1E;
+}
+
+#floatImg {
+    float: right;
+    margin: 10px;
+    width: 120px;
+}
+
+@media screen and (max-width:640px) {
+    nav {
+        float: none;
+        width: 100%;
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    nav a {
+        display: inline-block;
+        width: 50px;
+        text-align: center;
+    }
+    
+    main {
+        margin-left: 0;
+    }
+    
+    header {
+        height: 100px;
+        background-size: auto 100px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    nav {
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    
+    nav a {
+        display: block;
+        width: auto;
+        border: 3px outset #900;
+    }
+}
+
+@media screen and (max-width:340px) {
+    table {
+        box-shadow: none;
+        width: 100%;
+    }
+    
+    th, td {
+        display: block;
+    }
+    
+    tr {
+        border-bottom: 2px solid #333;
+    }
+}
+
+@media screen and (max-width:280px) {
+    #floatImg {
+        float: none;
+    }
+}

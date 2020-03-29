@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Formulär</title>
+  </head>
+  <body>
+    <!-- Startsida -->
+    <a href="index.html">Start</a>
+    <form action="http://dist1.webbintro.se/resources/response.php" method="get">
+	  <!-- Boxar-->
+	  <fieldset>
+	    <legend>Kontaktuppgifter</legend>
+		Namn: <input type="text" name="name" required><br />
+		Ålder: <input type="number" name="age" required>
+	  </fieldset>
+	  <fieldset>
+	    <legend>Dina besök på blomstermålabladet</legend>
+		Hur ofta besöker du blomstermålabladet?<br />
+		<input type="radio" name="freq" value="varje" required>Varje dag<br/>
+		<input type="radio" name="freq" value="varannan" required>Varannan dag<br />
+		<input type="radio" name="freq" value="vecka" required>Varje vecka<br/><br/>
+		Vilka delar av blomstermålabladet brukar du besöka?<br/>
+		<input type="checkbox" name="visits" value="nyhet">Nyheter<br/>
+		<input type="checkbox" name="visits" value="utrikes">Utrikes<br/>
+		<input type="checkbox" name="visits" value="inrikes">Inrikes<br/>
+		<input type="checkbox" name="visits" value="sport">Sport<br/>
+		<input type="checkbox" name="visits" value="skvaller">Skvaller<br/>
+		<input type="checkbox" name="visits" value="vader">Väder<br/>
+		<input type="checkbox" name="visits" value="ovrigt">Övrigt
+	  </fieldset>
+	  <fieldset>
+	    <legend>Vinn en T-shirt!</legend>
+		Ni har möjlighet att vinna en T-shirt om ni fyller i följande information:<br/><br/>
+		Bästa med blomstermålabladet:<br/>
+		<input type="text" name="best"><br/><br/>
+		Sämsta med blomstermålabladet:<br/>
+		<input type="text" name="worst"><br/><br/>
+		Epost: <input type="email" name="email" placeholder="t ex anton@mah.se"><br/>
+		Storlek: 
+		<!--Drop down list-->
+		<select name="size">
+		  <option value="xs">XS</option>
+		  <option value="s">S</option>
+		  <option value="m" selected>M</option>
+		  <option value="l">L</option>
+		  <option value="xl">XL</option>
+		</select>
+	  </fieldset>
+	  <fieldset>
+	    <legend>Skicka/Återställ</legend>
+		<!-- Skickar data till http://dist1.webbintro.se/resources/response.php-->
+		<input type="submit" value="Skicka">
+		<!--Återställer formuläret-->
+		<input type="reset" value="Återställ formulär">
+	  </fieldset>
+    </form>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, div, header, nav, main, article, section, aside, footer, iframe {margin:0; padding:0;}
+header, nav, main, article, section, aside, footer {display:block;} /* För webbläsare utan stöd för HTML5 */
+
+body {background-color:#FFF; color:#000; margin:0; font-family:Verdana, Geneva, sans-serif;}
+
+nav {position:absolute; top:0px; left:0px; bottom:40px; width:200px; background-color:#3a3b37; background-image: url(pics/navbar.jpg); background-repeat: no-repeat;}
+nav ul {list-style:none; margin:0; padding:0; margin-top: 150px;}
+nav a {display:block; padding:10px 20px; text-decoration:none; font-size:large; font-style:italic; font-weight:bold;}
+nav a:link, nav a:visited {color:#FFF;}
+nav a:hover, nav a:active {color:#CCC;}
+
+main {position:absolute; top:0px; left:200px; bottom:40px; right:0px; overflow:auto;}
+
+footer {position:absolute; left:0px; bottom:0px; right:0px; height:20px; background-color:#222; color:#FFF;
+	padding:10px; text-align:center;}
+
+aside img {float:right; max-width:50%;}
+
+#content {max-width:800px; padding:10px;}
+#content:after {content:""; display:block; clear:both;}
+
+.linkImg {float:left; margin-right:10px; border:0;}
+
+.address {list-style:none; font-style:italic;}
+
+#courseform {margin-left:40px;}
+#courseform label,#courseform input {display:block;}
+
+main {/*background-image: url(pics/bg.jpg); background-repeat: repeat-y; background-color: #FFAA00;*/
+    background:-webkit-linear-gradient(left,#FFF,#F80); /*For Safari 5.1 to 6.0*/
+    background:-o-linear-gradient(right, #FFF,#F80); /*For Opera 11.1 to 12.0*/
+    background:-moz-linear-gradient(right,#FFF,#F80); /*For Firefox 3.6 to 15*/
+    background: linear-gradient(to right,#FFF,#F80); /*Standard syntax*/
+}
